@@ -7,13 +7,13 @@ import { WorldDataService } from './word-data.service';
   styleUrls: ['./world-data.component.css'],
 })
 export class WorldDataComponent implements OnInit {
-  public dataO: any;
+  public worldOMeter: Object = {};
 
   constructor(private worldData: WorldDataService) {}
 
   ngOnInit(): void {
     this.worldData.fetchWorldData().subscribe((data) => {
-      console.log(data);
+      this.worldOMeter = data;
     });
   }
 }

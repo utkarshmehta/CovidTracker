@@ -1,0 +1,17 @@
+.column {
+
+  width: 30%;
+  padding: 10px;
+}
+
+.blink_me {
+    color: red;
+    animation: blinker 2.0s linear infinite;
+    font-family: sans-serif;
+  }
+
+  @keyframes blinker {
+    20% {
+      opacity: 0;
+    }
+  }

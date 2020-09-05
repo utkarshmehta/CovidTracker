@@ -1,1 +1,21 @@
+<div class="main-container">
+  <div class="row">
+    <span class="blink_me">Live</span> 
 
+  </div>
+  <br>
+  <div class="row">
+    <div class="column" style="background-color: #aaa;">
+      <h2>Total Cases</h2>
+      <p>{{ worldOMeter["cases"] | json | number: "1.0":"en-US" }}</p>
+    </div>
+    <div class="column" style="background-color: rgb(238, 122, 122);">
+      <h2>Total Deaths</h2>
+      <p>{{ worldOMeter["deaths"] | json | number: "1.0":"en-US" }}</p>
+    </div>
+    <div class="column" style="background-color: rgb(182, 232, 108);">
+      <h2>Tota Recovered</h2>
+      <p>{{ worldOMeter["recovered"] | json | number: "1.0":"en-US" }}</p>
+    </div>
+  </div>
+</div>
